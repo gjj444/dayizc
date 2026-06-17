@@ -95,15 +95,30 @@
       opacity: .5;
     }
 
+   .exhibition-title {
+    font-family: var(--font-serif);
+    font-size: clamp(2.2rem, 9vw, 3.6rem);
+    font-weight: 600;
+    letter-spacing: .15em;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+    padding-left: .15em;
+    white-space: nowrap;
+}
+
+/* 手机窄屏适配 */
+@media (max-width: 480px) {
     .exhibition-title {
-      font-family: var(--font-serif);
-      font-size: clamp(2.2rem, 9vw, 3.6rem);
-      font-weight: 600;
-      letter-spacing: .15em;
-      line-height: 1.3;
-      margin-bottom: 1.5rem;
-      padding-left: .15em;
+        font-size: clamp(1.8rem, 8vw, 2.8rem);
+        letter-spacing: 0.08em;
+        padding-left: 0;
     }
+    .exhibition-title .dot {
+        width: 0.3em;
+        height: 0.3em;
+        margin: 0 0.2em 0.1em;
+    }
+}
     .exhibition-title .dot {
       display: inline-block;
       width: .35em; height: .35em;
